@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="css/css/flat-ui.css" rel="stylesheet">
+
+		<style>
+			body { background-color: #2C3E50; }
+			.login {
+			  width: 360px;
+			  height: 266px;
+			  top: 35%;
+			  left: 50%;
+			  margin-top: -93px;
+			  margin-left: -185px;
+			  position: absolute;
+
+			  background-color: #bdc3c7;
+			  padding: 24px 23px 20px;
+			  border-radius: 6px;
+			}
+			.login .login-field {
+			  border-color: transparent;
+			  font-size: 17px;
+			  text-indent: 3px;
+			}
+			.login .login-field:focus {
+			  border-color: #2C3E50;
+			}
+			.login .login-field:focus + .login-field-icon {
+			  color: #2C3E50;
+			}
+			.login .login-field-icon {
+			  color: #bfc9ca;
+			  font-size: 16px;
+			  position: absolute;
+			  right: 13px;
+			  top: 9px;
+			  -webkit-transition: 0.25s;
+			  transition: 0.25s;
+			}
+			.form-control {
+				background-color: #ecf0f1;
+			}
+			.login-link {
+			  color: #818B8B;
+			  display: block;
+			  font-size: 13px;
+			  margin-top: 15px;
+			  text-align: center;
+			}
+			.login-link:hover {
+				color: #6B7070;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div class="login">
+			<div class="form-group">
+				<input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="login-name" />
+				<label class="login-field-icon fui-user" for="login-name"></label>
+			</div>
+
+			<div class="form-group">
+				<input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pas" />
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+			</div>
+
+			<a class="btn btn-inverse btn-lg btn-block" href="#">Login</a>
+			<a class="login-link" href="#">Lost your password?</a>
+		</div>
+	</body>
+</html>
